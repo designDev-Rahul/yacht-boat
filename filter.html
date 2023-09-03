@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yacht & Boat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/plugin/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Area -->
+    <header>
+        <section class="headerSection">
+            <div class="container-fluid pX-0">
+                <div class="totalHeader">
+                    <div class="topHeader">
+                        <div class="leftSide">
+                            <span class="capitalize">
+                                contact us: <i class="fa-solid fa-phone"></i>
+                                <a href="#">+91 9999999999</a>
+                            </span>
+                        </div>
+
+                        <div class="rightSide">
+                            <i class="fa-solid fa-envelope"></i><a href="#">info@abc.com</a>
+                        </div>
+                    </div>
+
+                    <div class="navbarSection">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/logo.png" alt="#" loading="lazy">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown active">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Yacht <span><i class="fa-solid fa-angle-down"></i></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" aria-current="page" href="filter.html">Filters
+                                                </a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="detail.html">Yacht Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Header Area End -->
+
+
+    <!-- Inner Banner Area -->
+    <section class="innerBanner">
+        <div class="bgArea">
+            <img src="images/bg2.webp" alt="#" loading="lazy">
+        </div>
+
+        <div class="headingArea">
+            <h1 class="fw-500">Charter Yachts</h1>
+            <p class="font-18 fw-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, possimus</p>
+        </div>
+    </section>
+    <!-- Inner Banner Area End -->
+
+
+    <!-- Filter Area -->
+    <section class="filterSection pTop pBtm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <div class="leftSide">
+                        <div class="headingArea">
+                            <h2 class="fw-600 mBoth capitalize">yachts</h2>
+                            <button type="button" class="btn" data-toggle="collapse" data-target="#collapseExample"
+                                aria-expanded="true" aria-controls="collapseExample" onclick="showHide()">
+                                <span class="span-1">filters<i class="fa-solid fa-sliders"></i></span>
+                            </button>
+                        </div>
+
+                        <div id="accordionPanel">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordionCard">
+                                    <button type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        codition
+                                    </button>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="cardBody">
+                                            <form>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">
+                                                        <span class="span2">Power</span>
+                                                        <span class="span3">(54020)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck2">
+                                                    <label class="form-check-label" for="exampleCheck2">
+                                                        <span class="span2">Sail</span>
+                                                        <span class="span3">(12146)</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordionCard">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        length
+                                    </button>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="cardBody">
+                                            <form>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">
+                                                        <span class="span2">Power</span>
+                                                        <span class="span3">(54020)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck2">
+                                                    <label class="form-check-label" for="exampleCheck2">
+                                                        <span class="span2">Sail</span>
+                                                        <span class="span3">(12146)</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordionCard">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        year
+                                    </button>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="cardBody">
+                                            <form>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">
+                                                        <span class="span2">Power</span>
+                                                        <span class="span3">(54020)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck2">
+                                                    <label class="form-check-label" for="exampleCheck2">
+                                                        <span class="span2">Sail</span>
+                                                        <span class="span3">(12146)</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordionCard">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        price
+                                    </button>
+                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="cardBody">
+                                            <form>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">
+                                                        <span class="span2">Power</span>
+                                                        <span class="span3">(54020)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck2">
+                                                    <label class="form-check-label" for="exampleCheck2">
+                                                        <span class="span2">Sail</span>
+                                                        <span class="span3">(12146)</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordionCard">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        type
+                                    </button>
+                                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="cardBody">
+                                            <form>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">
+                                                        <span class="span2">Power</span>
+                                                        <span class="span3">(54020)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck2">
+                                                    <label class="form-check-label" for="exampleCheck2">
+                                                        <span class="span2">Sail</span>
+                                                        <span class="span3">(12146)</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordionCard">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseSix">
+                                        make
+                                    </button>
+                                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="cardBody">
+                                            <form>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">
+                                                        <span class="span2">Power</span>
+                                                        <span class="span3">(54020)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck2">
+                                                    <label class="form-check-label" for="exampleCheck2">
+                                                        <span class="span2">Sail</span>
+                                                        <span class="span3">(12146)</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordionCard">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseSeven">
+                                        region
+                                    </button>
+                                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="cardBody">
+                                            <form>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">
+                                                        <span class="span2">Power</span>
+                                                        <span class="span3">(54020)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck2">
+                                                    <label class="form-check-label" for="exampleCheck2">
+                                                        <span class="span2">Sail</span>
+                                                        <span class="span3">(12146)</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordionCard">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseEight">
+                                        advanced filters
+                                    </button>
+                                    <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="cardBody">
+                                            <form>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">
+                                                        <span class="span2">Power</span>
+                                                        <span class="span3">(54020)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="exampleCheck2">
+                                                    <label class="form-check-label" for="exampleCheck2">
+                                                        <span class="span2">Sail</span>
+                                                        <span class="span3">(12146)</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordionBtn">
+                                    <button type="submit" class="btn">filters apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-7">
+                    <div class="rightSide">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="itemImg">
+                                        <img src="images/bg3.webp" alt="#" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="itemCont">
+                                        <h3 class="fw-600 mBoth">Maltese Falcon</h3>
+                                        <p class="p1 fw-500">Galeon 335 hts takes place of the acclaimed 325 model,
+                                            bringing a fresh new design, more interior space and even better
+                                            performance.
+                                        </p>
+                                        <span class="span-10 fw-600">KD 4,800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="itemImg">
+                                        <img src="images/bg3.webp" alt="#" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="itemCont">
+                                        <h3 class="fw-600 mBoth">Maltese Falcon</h3>
+                                        <p class="p1 fw-500">Galeon 335 hts takes place of the acclaimed 325 model,
+                                            bringing a fresh new design, more interior space and even better
+                                            performance.
+                                        </p>
+                                        <span class="span-10 fw-600">KD 4,800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="itemImg">
+                                        <img src="images/bg3.webp" alt="#" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="itemCont">
+                                        <h3 class="fw-600 mBoth">Maltese Falcon</h3>
+                                        <p class="p1 fw-500">Galeon 335 hts takes place of the acclaimed 325 model,
+                                            bringing a fresh new design, more interior space and even better
+                                            performance.
+                                        </p>
+                                        <span class="span-10 fw-600">KD 4,800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Filter Area End -->
+
+
+    <!-- Footer Area -->
+    <footer>
+        <section class="footerSection">
+            <div class="container">
+                <div class="topCont pTop">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="logoArea footerLink">
+                                <img src="images/logo.png" alt="#" loading="lazy">
+                                <ul>
+                                    <li>
+                                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <a href="#">T-21 Tower, Jaber Al Mubarak Street, Kuwait City</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                                        <a href="#">+91 9999999999</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><i class="fa-regular fa-envelope-open"></i></div>
+                                        <a href="#">info@abc.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="quickLinks footerLink">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">new boats</a></li>
+                                    <li><a href="#">used boats</a></li>
+                                    <li><a href="#">sell a boat</a></li>
+                                    <li><a href="#">contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="legal footerLink">
+                                <h3>legal</h3>
+                                <ul>
+                                    <li><a href="#">privacy policy</a></li>
+                                    <li><a href="#">terms & conditions</a></li>
+                                    <li><a href="#">disclaimer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="newsLetter footerLink">
+                                <h3>Subscribe our newsletter</h3>
+                                <p class="p1">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit vestibulum finibus
+                                </p>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter your email">
+                                    </div>
+                                    <button type="submit" class="btn">subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyrightArea">
+                    <p class="p1 mBoth">copy right</p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer Area End -->
+
+
+    <script src="js/plugin/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
